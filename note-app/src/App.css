@@ -1,0 +1,146 @@
+.container{
+    width: 100%;
+    max-width: 175rem;
+    min-height: 100vh;
+    background-color: #121212;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(255,255,255, .03);
+    width: 100%;
+
+}
+.header .logo{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 3rem;
+    color: rgba(255,255,255,.6);
+
+}
+
+.header .add{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    color: rgba(255,255,255, .7);
+    background-color: rgba(255,255,255, .03);
+    cursor: pointer;
+    transition: 250ms;
+}
+.header .add:hover{
+    background-color: rgba(255,255,255, .1);
+}
+
+.card_container{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2.5rem;
+    padding: 3rem;
+}
+
+@media (max-width : 1150px) {
+    .card_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+@media (max-width : 850px ) {
+    .card_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media (max-width : 650px ) {
+    .card_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+@media (max-width : 380px) {
+    .card_container{
+        padding: 3rem 1.2rem;
+    }    
+}
+
+.card_container .card{
+    color: #fff;
+    background-color: rgba(255,255,255,.03);
+    padding: 2rem 1.5rem;
+}
+
+.card .operations{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card .operations button{
+    outline: none;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, .05);
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 250ms;
+
+}
+
+.card .operations button:hover{
+    background-color: rgba(255,255,255, .1);
+}
+
+.card .date{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.card .date h3{
+    font-size: 1.8rem;
+}
+
+.card .date p{
+    font-size: 1.4rem;
+}
+
+.card .note{
+    margin-top: 1rem;
+}
+
+.card .note .title{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+}
+
+.card .note .content{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    
+}
+
+.abs{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .2rem;
+
+}
+
